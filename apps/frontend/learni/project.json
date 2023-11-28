@@ -19,7 +19,6 @@
         "assets": [
           "apps/frontend/learni/src/favicon.ico",
           "apps/frontend/learni/src/assets",
-          "apps/frontend/learni/src/netlify.toml",
           "apps/frontend/learni/src/_redirects"
         ],
         "styles": [
