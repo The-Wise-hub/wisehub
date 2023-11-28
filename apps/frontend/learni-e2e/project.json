@@ -1,0 +1,33 @@
+{
+  "name": "learni-e2e",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/frontend/learni-e2e/src",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/frontend/learni-e2e/cypress.config.ts",
+        "testingType": "e2e",
+        "devServerTarget": "learni:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "learni:serve:production"
+        },
+        "ci": {
+          "devServerTarget": "learni:serve-static"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/frontend/learni-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["learni"]
+}
