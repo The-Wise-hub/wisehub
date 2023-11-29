@@ -6,9 +6,9 @@ name: CI NODE JS WISE HUB BACKEND RUNNER
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "development" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "development" ]
+    branches: [ "main" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -54,5 +54,5 @@ jobs:
           context: dist/apps/backend/apis/
           file: dist/apps/backend/apis/Dockerfile
           push: true
-          tags: coderhunter/wisehub-dev:latest
+          tags: coderhunter/wisehub:latest
 
