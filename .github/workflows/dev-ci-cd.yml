@@ -52,7 +52,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: dist/apps/backend/apis/
-          file: Dockerfile
+          file: dist/apps/backend/apis/Dockerfile
           push: true
           tags: coderhunter/wisehub:latest
 
