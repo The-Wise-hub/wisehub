@@ -1,9 +1,11 @@
 import { Injectable } from '@nestjs/common';
-import { environment } from '../environments/environment';
 
 @Injectable()
 export class AppService {
-  getData(): { message: string; isProd: boolean } {
-    return { message: 'Hello API V1', isProd: environment.production };
+  getData(): { message: string; isProd: string } {
+    return {
+      message: 'Hello API V1',
+      isProd: (process.env['PORT'] || 'No Env') as string,
+    };
   }
 }

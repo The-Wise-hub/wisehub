@@ -23,22 +23,8 @@
         "webpackConfig": "apps/backend/apis/webpack.config.js"
       },
       "configurations": {
-        "development": {
-          "fileReplacements": [
-            {
-              "replace": "apps/backend/apis/src/environments/environment.ts",
-              "with": "apps/frontend/apis/src/environments/environment.dev.ts"
-            }
-          ]
-        },
-        "production": {
-          "fileReplacements": [
-            {
-              "replace": "apps/backend/apis/src/environments/environment.ts",
-              "with": "apps/backend/apis/src/environments/environment.prod.ts"
-            }
-          ]
-        }
+        "development": {},
+        "production": {}
       }
     },
     "serve": {
