@@ -56,3 +56,9 @@ jobs:
           push: true
           tags: coderhunter/wisehub-dev:latest
 
+      - name: Deploy Server Hit Webhook to Trigger
+        uses: JamesIves/fetch-api-data-action@releases/v1
+        with:
+          ENDPOINT: ${{ secrets.DEV_SERVICE_START_WEBHOOK_URL_RENDER }}
+          retry: true
+
