@@ -53,5 +53,5 @@ jobs:
         with:
           context: ./dist/apps/backend/apis/
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/wisehub:latest
+          tags: coderhunter/wisehub:latest
 
