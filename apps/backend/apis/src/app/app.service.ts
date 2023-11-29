@@ -5,7 +5,7 @@ export class AppService {
   getData(): { message: string; isProd: string } {
     return {
       message: 'Hello API V1',
-      isProd: (process.env['PORT'] || 'No Env') as string,
+      isProd: (process.env['ENV'] || 'No Env') as string,
     };
   }
 }

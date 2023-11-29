@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI NODE JS WISE HUB BACKEND RUNNER
+name: CI NODE JS PROD WISE HUB BACKEND RUNNER
 
 # Controls when the workflow will run
 on:
