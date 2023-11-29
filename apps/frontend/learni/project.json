@@ -30,7 +30,7 @@
         ],
         "scripts": [],
         "server": "apps/frontend/learni/src/main.server.ts",
-        "prerender": true,
+        "prerender": false,
         "ssr": {
           "entry": "apps/frontend/learni/server.ts"
         }
