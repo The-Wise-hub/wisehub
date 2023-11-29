@@ -9,12 +9,16 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
+        "generatePackageJson": true,
         "target": "node",
         "compiler": "tsc",
         "outputPath": "dist/apps/backend/apis",
         "main": "apps/backend/apis/src/main.ts",
         "tsConfig": "apps/backend/apis/tsconfig.app.json",
-        "assets": ["apps/backend/apis/src/assets"],
+        "assets": [
+          "apps/backend/apis/src/assets",
+          "apps/backend/apis/src/Dockerfile"
+        ],
         "isolatedConfig": true,
         "webpackConfig": "apps/backend/apis/webpack.config.js"
       },
