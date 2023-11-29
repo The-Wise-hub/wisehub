@@ -3,7 +3,7 @@ WORKDIR /usr/src/app
 
 EXPOSE 3000
 
-COPY ./dist/apps/backend/apis/ .
+COPY . .
 
 RUN npm install
 
